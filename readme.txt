@@ -37,10 +37,16 @@ None. Yet.
 
 == Changelog ==
 
+= 1.7 =
+Bugfix release.
+
 = 1.6 =
 First public release.
 
 == Upgrade Notice ==
+
+= 1.7 =
+This version fixes some critical bugs.
 
 = 1.6 =
 Please download Jibu Pro to experience our goodness.
