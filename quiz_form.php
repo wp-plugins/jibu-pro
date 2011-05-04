@@ -142,21 +142,21 @@ wpframe_add_editor_js();
 			<th><?php echo $quiz_d->name; ?></th>
 			<th><?php if($quiz_d->taken_time==0){
 				?> <?php echo $quiz_d->taken_time; ?> <?php
-				}else { ?><a href="edit.php?page=JibuPro/quiz.php&amp;action=All&amp;quiz_id=<?php echo $quiz_d->ID; ?>"><?php echo $quiz_d->taken_time; ?></a> <?php } ?>
+				}else { ?><a href="edit.php?page=jibu-pro/quiz.php&amp;action=All&amp;quiz_id=<?php echo $quiz_d->ID; ?>"><?php echo $quiz_d->taken_time; ?></a> <?php } ?>
             </th>
 			<th><?php if($quiz_d->passed==0){
 				?> <?php echo $quiz_d->passed; ?> <?php
-				}else { ?><a href="edit.php?page=JibuPro/quiz.php&amp;action=Passed&amp;quiz_id=<?php echo $quiz_d->ID; ?>"><?php echo $quiz_d->passed; ?></a> <?php } ?>
+				}else { ?><a href="edit.php?page=jibu-pro/quiz.php&amp;action=Passed&amp;quiz_id=<?php echo $quiz_d->ID; ?>"><?php echo $quiz_d->passed; ?></a> <?php } ?>
             </th>
 			<th><?php if($quiz_d->failed==0){
 				?> <?php echo $quiz_d->failed; ?> <?php
-				}else { ?><a href="edit.php?page=JibuPro/quiz.php&amp;action=Failed&amp;quiz_id=<?php echo $quiz_d->ID; ?>"><?php echo $quiz_d->failed; ?></a> <?php } ?>
+				}else { ?><a href="edit.php?page=jibu-pro/quiz.php&amp;action=Failed&amp;quiz_id=<?php echo $quiz_d->ID; ?>"><?php echo $quiz_d->failed; ?></a> <?php } ?>
             </th>
 			<th><?php
 				$abd=$quiz_d->taken_time-($quiz_d->passed+$quiz_d->failed); 
 			 	if($abd==0){
 				?> <?php echo $abd ?> <?php
-				}else { ?><a href="edit.php?page=JibuPro/quiz.php&amp;action=Abandon&amp;quiz_id=<?php echo $quiz_d->ID; ?>"><?php echo $abd; ?></a> <?php } ?>
+				}else { ?><a href="edit.php?page=jibu-pro/quiz.php&amp;action=Abandon&amp;quiz_id=<?php echo $quiz_d->ID; ?>"><?php echo $abd; ?></a> <?php } ?>
 			</th>
 			<th><?php echo $quiz_d->added_on; ?></th>
 		</tr>

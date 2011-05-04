@@ -4,7 +4,7 @@ Donate link: http://jibupro.com/
 Tags: quiz,question,answer,test
 Requires at least: 3.0
 Tested up to: 3.1.1
-Stable tag: 1.6
+Stable tag: 1.7
 
 Jibu Pro: the WordPress exam system.
 

@@ -91,8 +91,8 @@ if (count($all_question)) {
 		<th scope="row" style="text-align: center;"><?php echo $question_count ?></th>
 		<td><?php echo stripslashes($question->question) ?></td>
 		<td><?php echo $question->answer_count ?></td>
-		<td><a href='edit.php?page=JibuPro/question_form.php&amp;question=<?php echo $question->ID?>&amp;action=edit&amp;quiz=<?php echo $_REQUEST['quiz']?>' class='edit'><?php e('Edit'); ?></a></td>
-		<td><a href='edit.php?page=JibuPro/question.php&amp;action=delete&amp;question=<?php echo $question->ID?>&amp;quiz=<?php echo $_REQUEST['quiz']?>' class='delete' onclick="return confirm('<?php echo addslashes(t("You are about to delete this question. This will delete the answers to this question. Press 'OK' to delete and 'Cancel' to stop."))?>');"><?php e('Delete')?></a></td>
+		<td><a href='edit.php?page=jibu-pro/question_form.php&amp;question=<?php echo $question->ID?>&amp;action=edit&amp;quiz=<?php echo $_REQUEST['quiz']?>' class='edit'><?php e('Edit'); ?></a></td>
+		<td><a href='edit.php?page=jibu-pro/question.php&amp;action=delete&amp;question=<?php echo $question->ID?>&amp;quiz=<?php echo $_REQUEST['quiz']?>' class='delete' onclick="return confirm('<?php echo addslashes(t("You are about to delete this question. This will delete the answers to this question. Press 'OK' to delete and 'Cancel' to stop."))?>');"><?php e('Delete')?></a></td>
 		</tr>
 <?php
 		}
@@ -107,5 +107,5 @@ if (count($all_question)) {
 	</tbody>
 </table>
 
-<a href="edit.php?page=JibuPro/question_form.php&amp;action=new&amp;quiz=<?php echo $_REQUEST['quiz'] ?>"><?php e('Create New Question')?></a>
+<a href="edit.php?page=jibu-pro/question_form.php&amp;action=new&amp;quiz=<?php echo $_REQUEST['quiz'] ?>"><?php e('Create New Question')?></a>
 </div>

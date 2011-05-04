@@ -19,7 +19,7 @@ if($action == 'All'){ $query="1"; $t=""; }
 $quiz = $wpdb->get_row($wpdb->prepare("SELECT  name   FROM {$wpdb->prefix}quiz_quiz WHERE  ID={$q_id}   ")); ?>
 <div class="wrap" style="width:90%; margin-left:15px;">
 <h2><?php echo $quiz->name." Results".$t; ?></h2>
-<div  style="float:right; margin-top: -25px;"><a href="edit.php?page=JibuPro/quiz_form.php&action=result">Back to Results page</a></div>
+<div  style="float:right; margin-top: -25px;"><a href="edit.php?page=jibu-pro/quiz_form.php&action=result">Back to Results page</a></div>
 <table class="widefat">
 	<thead>
 	<tr>
@@ -174,9 +174,9 @@ if (count($all_quiz)) {
 		<td><?php echo stripslashes($quiz->name)?></td>
 		<td><?php echo $quiz->question_count ?></td>
 		<td><?php echo date(get_option('date_format') . ' ' . get_option('time_format'), strtotime($quiz->added_on)) ?></td>
-		<td><a href='edit.php?page=JibuPro/question.php&amp;quiz=<?php echo $quiz->ID?>' class='edit'><?php e('Manage Questions')?></a></td>
-		<td><a href='edit.php?page=JibuPro/quiz_form.php&amp;quiz=<?php echo $quiz->ID?>&amp;action=edit' class='edit'><?php e('Edit'); ?></a></td>
-		<td><a href='edit.php?page=JibuPro/quiz.php&amp;action=delete&amp;quiz=<?php echo $quiz->ID?>' class='delete' onclick="return confirm('<?php echo  addslashes(t("You are about to delete this quiz? This will delete all the questions and answers within this quiz. Press 'OK' to delete and 'Cancel' to stop."))?>');"><?php e('Delete')?></a></td>
+		<td><a href='edit.php?page=jibu-pro/question.php&amp;quiz=<?php echo $quiz->ID?>' class='edit'><?php e('Manage Questions')?></a></td>
+		<td><a href='edit.php?page=jibu-pro/quiz_form.php&amp;quiz=<?php echo $quiz->ID?>&amp;action=edit' class='edit'><?php e('Edit'); ?></a></td>
+		<td><a href='edit.php?page=jibu-pro/quiz.php&amp;action=delete&amp;quiz=<?php echo $quiz->ID?>' class='delete' onclick="return confirm('<?php echo  addslashes(t("You are about to delete this quiz? This will delete all the questions and answers within this quiz. Press 'OK' to delete and 'Cancel' to stop."))?>');"><?php e('Delete')?></a></td>
 		</tr>
 <?php
 		}
