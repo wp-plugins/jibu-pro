@@ -99,7 +99,7 @@ function init() {
 jQuery(document).ready(init);
 </script>
 
-<form name="post" action="edit.php?page=JibuPro/question.php&amp;quiz=<?php echo $_REQUEST['quiz']; ?>" method="post" id="post">
+<form name="post" action="edit.php?page=jibu-pro/question.php&amp;quiz=<?php echo $_REQUEST['quiz']; ?>" method="post" id="post">
 <div id="poststuff">
 
 <div id="<?php echo user_can_richedit() ? 'postdivrich' : 'postdiv'; ?>" class="postarea">
@@ -148,7 +148,7 @@ for($i=1; $i<=$answer_count; $i++) { ?>
 <span id="autosave"></span>
 <input type="submit" name="submit" value="<?php e('Save') ?>" style="font-weight: bold;" />
 </p>
-<a href="edit.php?page=JibuPro/question.php&amp;quiz=<?php echo $_REQUEST['quiz']?>"><?php e("Go to Questions Page") ?></a>
+<a href="edit.php?page=jibu-pro/question.php&amp;quiz=<?php echo $_REQUEST['quiz']?>"><?php e("Go to Questions Page") ?></a>
 </div>
 </form>
 
